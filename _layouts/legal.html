@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+
+<!-- add a bit of styling -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<title itemprop="name">London Sailing Club | {{ page.title }}</title>
+<meta itemprop="inLanguage"     content="en">
+<meta itemprop="author creator" content="{{ page.author }}">
+<meta itemprop="articleSection" content="Legal">
+<meta itemprop="dateCreated"   content="{{ page.date | html5date }}">
+<meta itemprop="dateModified"   content="{{ page.update | html5date }}">
+
+<style>
+  body { padding-top: 70px; max-width: 640px;}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}">London Sailing Club</a>
+        </div>
+    </div>
+</nav>
+
+<div id="main" class="container-fluid" itemprop="articleBody">
+<div id="article">
+
+<h1 itemprop="headline" id="headline">{{ page.title }}</h1>
+
+<div itemprop="text" id="text">
+
+{{ content }}
+
+<hr />
+
+<p class="small">
+  This version was last updated on: {{ page.update | html5date }}<br/>
+  The latest authoritative version of this document is available from:<br/> 
+  <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ site.url }}{{ site.baseurl }}{{ page.url }}</a><br/>
+  The full change history of this document can be found here:<br/>
+  <a href="https://github.com/{{ site.username }}/{{ site.project }}/commits/gh-pages/{{ page.path }}">https://github.com/{{ site.username }}/{{ site.project }}/commits/gh-pages/{{ page.path }}</a>
+</p>
+
+</div><!-- /#text -->
+</div><!-- /#article -->
+</div><!-- /#main -->
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

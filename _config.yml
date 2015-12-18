@@ -1,0 +1,11 @@
+url:        "https://terms.london-sailing.com"
+baseurl:    ""
+username:   "london-sailing"
+project:    "terms"
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "legal"
